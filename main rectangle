@@ -1,0 +1,31 @@
+package Rectangle;
+
+public class Main {
+	public static void main(String[] args) {
+		Rectangle r1 = new Rectangle(4, 4);
+		Rectangle r2 = new Rectangle(6, 6);
+		
+		int area = r1.calcArea(0, 0);
+		int perimeter = r1.calcPerimeter(area, area);
+		
+		int area2 = r2.calcArea(0, 0);
+		int perimeter2 = r2.calcPerimeter(area, area);
+		
+		System.out.println("the area for r1 is " + area);
+		System.out.println("the perimeter for r1 is " + perimeter);
+		
+		System.out.println("the area for r2 is " + area2);
+		System.out.println("the perimeter for r2 is " + perimeter2);
+		
+		System.out.println(r1.scale(2));
+		System.out.println(r2.scale(2));
+		
+		System.out.println("the sum area is " + (area + area2));
+		System.out.println("the sum perimeter is " + (perimeter + perimeter2));
+		
+		r1.draw();
+		System.out.println();
+		r1.draw();
+		r1.draw();
+		System.out.println();
+		r2.draw();
