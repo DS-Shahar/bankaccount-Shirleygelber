@@ -29,3 +29,11 @@ public class Main {
 		r1.draw();
 		System.out.println();
 		r2.draw();
+		
+		Circle c1 = new Circle (4);
+		Circle c2 = new Circle (2);
+		
+		System.out.println ("The area of the first circle is: " + c1.area(perimeter2));
+		System.out.println ("The area of the second circle is: " + c2.area(perimeter2));
+	}
+}
